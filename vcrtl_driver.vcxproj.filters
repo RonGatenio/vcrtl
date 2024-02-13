@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\assert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\runtime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\type_info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\x64\fh3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\x64\fh4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\x64\throw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\x64\unwind_handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\algorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\assert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\bugcheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\flags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\intrin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\limits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\memcpy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\ptr_to_member.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\rva.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\stddef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\stdint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\type_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\type_traits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\win32_seh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\x64\cpu_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\x64\eh_structs_x64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\x64\throw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\x64\capture.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B67A03DA-9B12-3840-AEE6-B79DB8A70F81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8875F95A-31E0-39A9-BFF4-CD103BCB6CDF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
