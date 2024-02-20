@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\assert.cpp">
+    <ClCompile Include="$(ProjectDir)src\assert.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\runtime.cpp">
+    <ClCompile Include="$(ProjectDir)src\runtime.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\type_info.cpp">
+    <ClCompile Include="$(ProjectDir)src\type_info.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\x64\fh3.cpp">
+    <ClCompile Include="$(ProjectDir)src\x64\fh3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\x64\fh4.cpp">
+    <ClCompile Include="$(ProjectDir)src\x64\fh4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\x64\throw.cpp">
+    <ClCompile Include="$(ProjectDir)src\x64\throw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\x64\unwind_handler.cpp">
+    <ClCompile Include="$(ProjectDir)src\x64\unwind_handler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="mem.cpp">
@@ -27,66 +27,66 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\algorithm.h">
+    <ClInclude Include="$(ProjectDir)src\algorithm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\assert.h">
+    <ClInclude Include="$(ProjectDir)src\assert.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\bugcheck.h">
+    <ClInclude Include="$(ProjectDir)src\bugcheck.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\flags.h">
+    <ClInclude Include="$(ProjectDir)src\flags.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\intrin.h">
+    <ClInclude Include="$(ProjectDir)src\intrin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\limits.h">
+    <ClInclude Include="$(ProjectDir)src\limits.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\memcpy.h">
+    <ClInclude Include="$(ProjectDir)src\memcpy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\ptr_to_member.h">
+    <ClInclude Include="$(ProjectDir)src\ptr_to_member.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\rva.h">
+    <ClInclude Include="$(ProjectDir)src\rva.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\stddef.h">
+    <ClInclude Include="$(ProjectDir)src\stddef.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\stdint.h">
+    <ClInclude Include="$(ProjectDir)src\stdint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\type_info.h">
+    <ClInclude Include="$(ProjectDir)src\type_info.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\type_traits.h">
+    <ClInclude Include="$(ProjectDir)src\type_traits.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\utils.h">
+    <ClInclude Include="$(ProjectDir)src\utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\win32_seh.h">
+    <ClInclude Include="$(ProjectDir)src\win32_seh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\x64\cpu_context.h">
+    <ClInclude Include="$(ProjectDir)src\x64\cpu_context.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\x64\eh_structs_x64.h">
+    <ClInclude Include="$(ProjectDir)src\x64\eh_structs_x64.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\x64\throw.h">
+    <ClInclude Include="$(ProjectDir)src\x64\throw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\CMakeLists.txt" />
+    <CustomBuild Include="$(ProjectDir)CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\x64\capture.asm" />
+    <MASM Include="$(ProjectDir)src\x64\capture.asm" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
