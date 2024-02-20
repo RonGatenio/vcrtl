@@ -11,5 +11,5 @@ void vcrtl::_verify(bool cond)
 
 void vcrtl::on_bug_check(bug_check_reason reason)
 {
-	KeBugCheckEx(DRIVER_VIOLATION, (ULONG_PTR)reason, 0, 0, 0);
+	// TODO: KeBugCheckEx(DRIVER_VIOLATION, (ULONG_PTR)reason, 0, 0, 0);
 }

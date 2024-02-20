@@ -24,10 +24,10 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{CD19C317-AA62-3DA9-922C-66DC4F1D451F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
-    <ProjectName>vcrtl_driver</ProjectName>
+    <ProjectName>vcrtl</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -60,13 +60,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\Debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vcrtl_driver.dir\Debug\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vcrtl_driver</TargetName>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)build\$(Configuration).$(PlatformTarget)\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)obj\$(Configuration).$(PlatformTarget)\$(ProjectName)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vcrtl</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vcrtl_driver.dir\Release\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vcrtl_driver</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vcrtl</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">vcrtl_driver.dir\MinSizeRel\</IntDir>
@@ -81,7 +81,8 @@
     <ClCompile>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/shared" /external:I "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/km"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BasicRuntimeChecks>
+      </BasicRuntimeChecks>
       <CallingConvention>StdCall</CallingConvention>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -91,13 +92,15 @@
       <LanguageStandard>stdcpp17</LanguageStandard>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary>
+      </RuntimeLibrary>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <StringPooling>true</StringPooling>
       <StructMemberAlignment>8Bytes</StructMemberAlignment>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;WINNT=1;_WIN64;_AMD64_;AMD64;MSC_NOOPT;DEPRECATE_DDK_FUNCTIONS=1;DBG=1;_WIN32_WINNT=0x0601;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;WINNT=1;_WIN64;_AMD64_;AMD64;MSC_NOOPT;DEPRECATE_DDK_FUNCTIONS=1;DBG=1;_WIN32_WINNT=0x0601;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
@@ -128,7 +131,7 @@
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/shared" /external:I "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/km"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CallingConvention>StdCall</CallingConvention>
-      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExceptionHandling>false</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <ForcedIncludeFiles>warning.h;C:/Home/Work/Windows/Kernel/stlkrn/deps/vcrtl/CMakeFiles/wdkflags.h</ForcedIncludeFiles>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -144,6 +147,8 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <SDLCheck>false</SDLCheck>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINNT=1;_WIN64;_AMD64_;AMD64;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
@@ -318,6 +323,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="mem.cpp" />
     <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\algorithm.h" />
     <ClCompile Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\assert.cpp" />
     <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\assert.h" />

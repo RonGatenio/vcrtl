@@ -1,13 +1,16 @@
+
 #include "throw.h"
 #include "../win32_seh.h"
 #include "../assert.h"
 #include "../memcpy.h"
+
 using namespace vcrtl;
 using namespace vcrtl::_msvc;
 using namespace vcrtl::_msvc::x64;
 
 extern "C" void __cxx_call_catch_handler();
 extern "C" symbol __ImageBase;
+
 
 namespace {
 

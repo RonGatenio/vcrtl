@@ -22,6 +22,9 @@
     <ClCompile Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\x64\unwind_handler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Home\Work\Windows\Kernel\stlkrn\deps\vcrtl\src\algorithm.h">
